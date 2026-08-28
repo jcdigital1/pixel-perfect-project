@@ -14,7 +14,81 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      sales: {
+        Row: {
+          client_name: string
+          client_phone: string | null
+          cost_amount: number
+          created_at: string
+          due_date: string | null
+          id: string
+          is_paid: boolean
+          notes: string | null
+          paid_at: string | null
+          payment_method: string
+          product_description: string | null
+          sale_amount: number
+          sale_date: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          client_name: string
+          client_phone?: string | null
+          cost_amount?: number
+          created_at?: string
+          due_date?: string | null
+          id?: string
+          is_paid?: boolean
+          notes?: string | null
+          paid_at?: string | null
+          payment_method?: string
+          product_description?: string | null
+          sale_amount?: number
+          sale_date?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Update: {
+          client_name?: string
+          client_phone?: string | null
+          cost_amount?: number
+          created_at?: string
+          due_date?: string | null
+          id?: string
+          is_paid?: boolean
+          notes?: string | null
+          paid_at?: string | null
+          payment_method?: string
+          product_description?: string | null
+          sale_amount?: number
+          sale_date?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_preferences: {
+        Row: {
+          billing_template: string
+          receipt_template: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          billing_template?: string
+          receipt_template?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Update: {
+          billing_template?: string
+          receipt_template?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
