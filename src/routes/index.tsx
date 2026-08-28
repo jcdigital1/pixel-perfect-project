@@ -10,13 +10,13 @@ import { openWhatsApp, preferencesQueryOptions, salesQueryOptions } from "@/lib/
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Painel de Vendas — Gestão 3D" },
+      { title: "Painel de Vendas — Pr Ivânia Gestão" },
       {
         name: "description",
         content:
           "Painel com lucro da semana, faturamento do mês, contas a receber e cobranças no WhatsApp.",
       },
-      { property: "og:title", content: "Painel de Vendas — Gestão 3D" },
+      { property: "og:title", content: "Painel de Vendas — Pr Ivânia Gestão" },
       {
         property: "og:description",
         content:
@@ -82,7 +82,7 @@ function Dashboard() {
       </div>
 
       <section className="mt-6 grid gap-5 xl:grid-cols-2">
-        <div className="glass-3d rounded-2xl p-5">
+        <div className="glass-3d lift-3d rounded-2xl p-5">
           <h2 className="mb-3 font-black">Cobranças de hoje</h2>
           {todayDues.length === 0 ? (
             <p className="text-sm text-muted-foreground">Nada para cobrar hoje. 💜</p>
@@ -91,7 +91,7 @@ function Dashboard() {
               {todayDues.map((sale) => (
                 <div
                   key={sale.id}
-                  className="panel flex items-center justify-between gap-3 p-3"
+                  className="panel lift-3d flex items-center justify-between gap-3 p-3"
                 >
                   <div className="min-w-0">
                     <p className="truncate text-sm font-bold">{sale.client_name}</p>
@@ -117,7 +117,7 @@ function Dashboard() {
           )}
         </div>
 
-        <div className="glass-3d rounded-2xl p-5">
+        <div className="glass-3d lift-3d rounded-2xl p-5">
           <div className="mb-3 flex items-center justify-between">
             <h2 className="font-black">Vendas recentes</h2>
             <Link to="/vendas" className="text-xs font-bold text-primary">
@@ -154,7 +154,7 @@ function Stat({
   green?: boolean;
 }) {
   return (
-    <div className="glass-3d rounded-2xl p-4">
+    <div className="glass-3d lift-3d rounded-2xl p-4">
       <div
         className={`mb-3 flex h-10 w-10 items-center justify-center rounded-xl ${green ? "icon-green" : "icon-purple"}`}
       >

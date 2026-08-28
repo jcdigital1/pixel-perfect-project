@@ -18,9 +18,9 @@ import {
 export const Route = createFileRoute("/config")({
   head: () => ({
     meta: [
-      { title: "Ajustes — Gestão 3D" },
+      { title: "Ajustes — Pr Ivânia Gestão" },
       { name: "description", content: "Personalize as mensagens de cobrança e recibo." },
-      { property: "og:title", content: "Ajustes — Gestão 3D" },
+      { property: "og:title", content: "Ajustes — Pr Ivânia Gestão" },
       { property: "og:description", content: "Personalize as mensagens de cobrança e recibo." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -64,7 +64,7 @@ function SettingsPage() {
   return (
     <AppShell title="Ajustes" subtitle="Conta e mensagens automáticas">
       <div className="grid gap-5 lg:grid-cols-[1fr_1.4fr]">
-        <div className="glass-3d space-y-3 rounded-2xl p-5">
+        <div className="glass-3d lift-3d space-y-3 rounded-2xl p-5">
           <h2 className="font-black">Minha conta</h2>
           <p className="truncate text-sm text-muted-foreground">{user?.email ?? "Conta"}</p>
           <Button
@@ -79,7 +79,7 @@ function SettingsPage() {
           </Button>
         </div>
 
-        <div className="glass-3d space-y-4 rounded-2xl p-5">
+        <div className="glass-3d lift-3d space-y-4 rounded-2xl p-5">
           <div>
             <h2 className="font-black">Mensagens do WhatsApp</h2>
             <p className="text-xs text-muted-foreground">

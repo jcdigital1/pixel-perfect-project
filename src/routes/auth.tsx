@@ -13,12 +13,12 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Entrar — Gestão 3D de Vendas" },
+      { title: "Entrar — Pr Ivânia Gestão" },
       {
         name: "description",
         content: "Acesse seu painel de vendas, recebimentos e clientes com segurança.",
       },
-      { property: "og:title", content: "Entrar — Gestão 3D de Vendas" },
+      { property: "og:title", content: "Entrar — Pr Ivânia Gestão" },
       {
         property: "og:description",
         content: "Acesse seu painel de vendas, recebimentos e clientes com segurança.",
@@ -94,13 +94,14 @@ function AuthPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4 py-10">
-      <div className="glass-3d w-full max-w-md rounded-3xl p-7">
+    <div className="aurora-bg flex min-h-screen items-center justify-center bg-background px-4 py-10">
+      <div className="glass-3d lift-3d stage-3d w-full max-w-md rounded-3xl p-7">
         <div className="mb-7 text-center">
           <div className="icon-purple mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl">
             <BarChart3 className="h-7 w-7 text-primary-foreground" />
           </div>
-          <h1 className="text-2xl font-black tracking-tight">Gestão 3D</h1>
+          <h1 className="text-gradient-purple text-3xl font-black tracking-tight">Pr Ivânia Gestão</h1>
+
           <p className="mt-1 text-sm text-muted-foreground">
             Controle de vendas, recebimentos e clientes.
           </p>
@@ -166,7 +167,7 @@ function AuthPage() {
           )}
 
           <Button type="submit" variant="hero" size="lg" className="w-full" disabled={busy}>
-            {busy ? "Aguarde..." : mode === "login" ? "ACESSAR GESTOR 3D" : "CRIAR CONTA E ENTRAR"}
+            {busy ? "Aguarde..." : mode === "login" ? "ACESSAR PR IVÂNIA GESTÃO" : "CRIAR CONTA E ENTRAR"}
           </Button>
         </form>
 

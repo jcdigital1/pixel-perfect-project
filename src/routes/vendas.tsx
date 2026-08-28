@@ -10,9 +10,9 @@ import { preferencesQueryOptions, salesQueryOptions } from "@/lib/sales";
 export const Route = createFileRoute("/vendas")({
   head: () => ({
     meta: [
-      { title: "Vendas — Gestão 3D" },
+      { title: "Vendas — Pr Ivânia Gestão" },
       { name: "description", content: "Todas as suas vendas registradas, com lucro e status." },
-      { property: "og:title", content: "Vendas — Gestão 3D" },
+      { property: "og:title", content: "Vendas — Pr Ivânia Gestão" },
       {
         property: "og:description",
         content: "Todas as suas vendas registradas, com lucro e status.",

@@ -73,7 +73,7 @@ export function AppShell({ title, subtitle, children }: { title: string; subtitl
 
   return (
     <SaleDialogCtx.Provider value={ctx}>
-      <div className="min-h-screen bg-background">
+      <div className="aurora-bg min-h-screen bg-background">
         <div className="mx-auto flex max-w-7xl">
           <aside className="glass-3d sticky top-0 hidden h-screen w-64 shrink-0 flex-col justify-between p-5 lg:flex">
             <div>
@@ -82,7 +82,7 @@ export function AppShell({ title, subtitle, children }: { title: string; subtitl
                   <BarChart3 className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <div>
-                  <p className="text-sm font-black leading-tight">Gestão 3D</p>
+                  <p className="emboss text-sm font-black leading-tight">Pr Ivânia Gestão</p>
                   <p className="text-[11px] text-muted-foreground">Vendas & recebimentos</p>
                 </div>
               </div>
@@ -95,12 +95,13 @@ export function AppShell({ title, subtitle, children }: { title: string; subtitl
                       key={to}
                       to={to}
                       className={cn(
-                        "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-bold transition-colors",
+                        "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-bold transition-all duration-200 hover:translate-x-0.5",
                         active
-                          ? "icon-purple text-primary-foreground"
+                          ? "icon-purple emboss text-primary-foreground"
                           : "text-muted-foreground hover:bg-muted",
                       )}
                     >
+
                       <Icon className="h-4 w-4" />
                       <span className="flex-1">{label}</span>
                       {badge ? (
@@ -130,16 +131,19 @@ export function AppShell({ title, subtitle, children }: { title: string; subtitl
             </div>
           </aside>
 
-          <main className="min-w-0 flex-1 px-4 pb-28 pt-6 lg:px-8 lg:pb-10">
+          <main className="stage-3d min-w-0 flex-1 px-4 pb-28 pt-6 lg:px-8 lg:pb-10">
             <header className="mb-6 flex items-start justify-between gap-4">
               <div>
-                <h1 className="text-2xl font-black tracking-tight lg:text-3xl">{title}</h1>
+                <h1 className="text-gradient-purple text-2xl font-black tracking-tight lg:text-3xl">
+                  {title}
+                </h1>
                 {subtitle && <p className="mt-1 text-sm text-muted-foreground">{subtitle}</p>}
               </div>
               <Button variant="hero" onClick={() => ctx.openSale(null)} className="shrink-0">
                 <Plus className="h-4 w-4" /> Nova venda
               </Button>
             </header>
+
             {children}
           </main>
         </div>

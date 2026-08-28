@@ -10,9 +10,9 @@ import { salesQueryOptions } from "@/lib/sales";
 export const Route = createFileRoute("/clientes")({
   head: () => ({
     meta: [
-      { title: "Clientes — Gestão 3D" },
+      { title: "Clientes — Pr Ivânia Gestão" },
       { name: "description", content: "Sua carteira de clientes com histórico de compras." },
-      { property: "og:title", content: "Clientes — Gestão 3D" },
+      { property: "og:title", content: "Clientes — Pr Ivânia Gestão" },
       {
         property: "og:description",
         content: "Sua carteira de clientes com histórico de compras.",
@@ -60,7 +60,7 @@ function ClientsPage() {
       ) : (
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {clients.map((client) => (
-            <div key={client.name} className="glass-3d rounded-2xl p-4">
+            <div key={client.name} className="glass-3d lift-3d rounded-2xl p-4">
               <h3 className="truncate font-black">{client.name}</h3>
               <p className="text-xs text-muted-foreground">{formatPhone(client.phone)}</p>
               <div className="panel mt-3 grid grid-cols-3 gap-2 p-3 text-center">
