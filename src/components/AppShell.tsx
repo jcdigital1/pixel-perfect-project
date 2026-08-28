@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import {
@@ -47,9 +47,10 @@ export function AppShell({ title, subtitle, children }: { title: string; subtitl
     };
   }, [sales]);
 
-  if (!loading && !user) {
-    navigate({ to: "/auth" });
-  }
+  useEffect(() => {
+    if (!loading && !user) navigate({ to: "/auth" });
+  }, [loading, user, navigate]);
+
 
   const ctx = useMemo<SaleDialogContext>(
     () => ({
