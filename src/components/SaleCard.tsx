@@ -50,7 +50,7 @@ export function SaleCard({ sale, preferences }: { sale: Sale; preferences: Prefe
   const profit = sale.sale_amount - sale.cost_amount;
 
   return (
-    <div className="glass-3d rounded-2xl p-4">
+    <div className="glass-3d lift-3d rounded-2xl p-4">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <h3 className="truncate font-black">{sale.client_name}</h3>

@@ -64,7 +64,7 @@ function ReceivablesPage() {
             return (
               <div
                 key={sale.id}
-                className="panel flex flex-col justify-between gap-3 p-4 sm:flex-row sm:items-center"
+                className="panel lift-3d flex flex-col justify-between gap-3 p-4 sm:flex-row sm:items-center"
               >
                 <div className="min-w-0">
                   <h4 className="truncate font-bold">{sale.client_name}</h4>
@@ -126,7 +126,7 @@ function StatCard({
   tone?: "default" | "success" | "danger";
 }) {
   return (
-    <div className="glass-3d rounded-2xl p-4">
+    <div className="glass-3d lift-3d rounded-2xl p-4">
       <p className="text-[11px] font-bold text-muted-foreground">{label}</p>
       <p
         className={cn(

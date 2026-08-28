@@ -60,7 +60,7 @@ function ClientsPage() {
       ) : (
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {clients.map((client) => (
-            <div key={client.name} className="glass-3d rounded-2xl p-4">
+            <div key={client.name} className="glass-3d lift-3d rounded-2xl p-4">
               <h3 className="truncate font-black">{client.name}</h3>
               <p className="text-xs text-muted-foreground">{formatPhone(client.phone)}</p>
               <div className="panel mt-3 grid grid-cols-3 gap-2 p-3 text-center">
