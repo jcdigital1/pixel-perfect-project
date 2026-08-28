@@ -73,7 +73,7 @@ export function AppShell({ title, subtitle, children }: { title: string; subtitl
 
   return (
     <SaleDialogCtx.Provider value={ctx}>
-      <div className="min-h-screen bg-background">
+      <div className="aurora-bg min-h-screen bg-background">
         <div className="mx-auto flex max-w-7xl">
           <aside className="glass-3d sticky top-0 hidden h-screen w-64 shrink-0 flex-col justify-between p-5 lg:flex">
             <div>
