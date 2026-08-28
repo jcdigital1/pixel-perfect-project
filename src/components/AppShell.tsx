@@ -82,7 +82,7 @@ export function AppShell({ title, subtitle, children }: { title: string; subtitl
                   <BarChart3 className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <div>
-                  <p className="text-sm font-black leading-tight">Gestão 3D</p>
+                  <p className="text-sm font-black leading-tight">Pr Ivânia Gestão</p>
                   <p className="text-[11px] text-muted-foreground">Vendas & recebimentos</p>
                 </div>
               </div>

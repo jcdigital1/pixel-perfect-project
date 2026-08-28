@@ -18,9 +18,9 @@ import {
 export const Route = createFileRoute("/config")({
   head: () => ({
     meta: [
-      { title: "Ajustes — Gestão 3D" },
+      { title: "Ajustes — Pr Ivânia Gestão" },
       { name: "description", content: "Personalize as mensagens de cobrança e recibo." },
-      { property: "og:title", content: "Ajustes — Gestão 3D" },
+      { property: "og:title", content: "Ajustes — Pr Ivânia Gestão" },
       { property: "og:description", content: "Personalize as mensagens de cobrança e recibo." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

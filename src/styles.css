@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — "Gestão 3D": dark navy glassmorphism with purple/emerald accents.
+ * Design system — "Pr Ivânia Gestão": dark navy glassmorphism with purple/emerald accents.
  * All colors are oklch semantic tokens. Never hardcode colors in components.
  */
 

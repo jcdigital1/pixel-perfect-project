@@ -10,13 +10,13 @@ import { openWhatsApp, preferencesQueryOptions, salesQueryOptions } from "@/lib/
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Painel de Vendas — Gestão 3D" },
+      { title: "Painel de Vendas — Pr Ivânia Gestão" },
       {
         name: "description",
         content:
           "Painel com lucro da semana, faturamento do mês, contas a receber e cobranças no WhatsApp.",
       },
-      { property: "og:title", content: "Painel de Vendas — Gestão 3D" },
+      { property: "og:title", content: "Painel de Vendas — Pr Ivânia Gestão" },
       {
         property: "og:description",
         content:

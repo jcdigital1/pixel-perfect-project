@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/recebiveis")({
   head: () => ({
     meta: [
-      { title: "Contas a Receber — Gestão 3D" },
+      { title: "Contas a Receber — Pr Ivânia Gestão" },
       { name: "description", content: "Acompanhe pagamentos pendentes, atrasos e cobranças." },
-      { property: "og:title", content: "Contas a Receber — Gestão 3D" },
+      { property: "og:title", content: "Contas a Receber — Pr Ivânia Gestão" },
       {
         property: "og:description",
         content: "Acompanhe pagamentos pendentes, atrasos e cobranças.",

@@ -10,9 +10,9 @@ import { salesQueryOptions } from "@/lib/sales";
 export const Route = createFileRoute("/clientes")({
   head: () => ({
     meta: [
-      { title: "Clientes — Gestão 3D" },
+      { title: "Clientes — Pr Ivânia Gestão" },
       { name: "description", content: "Sua carteira de clientes com histórico de compras." },
-      { property: "og:title", content: "Clientes — Gestão 3D" },
+      { property: "og:title", content: "Clientes — Pr Ivânia Gestão" },
       {
         property: "og:description",
         content: "Sua carteira de clientes com histórico de compras.",

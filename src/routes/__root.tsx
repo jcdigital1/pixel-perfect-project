@@ -79,13 +79,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Gestão 3D — Vendas, Recebimentos e Clientes" },
+      { title: "Pr Ivânia Gestão — Vendas, Recebimentos e Clientes" },
       {
         name: "description",
         content:
           "Controle suas vendas, lucros, contas a receber e cobranças no WhatsApp em um só painel.",
       },
-      { property: "og:title", content: "Gestão 3D — Vendas, Recebimentos e Clientes" },
+      { property: "og:title", content: "Pr Ivânia Gestão — Vendas, Recebimentos e Clientes" },
       {
         property: "og:description",
         content:
